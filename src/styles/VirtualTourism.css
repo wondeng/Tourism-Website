@@ -1,0 +1,31 @@
+/* src/styles/VirtualTourism.css */
+.tourism-container {
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .interactive-map, .local-guides {
+    margin: 20px 0;
+  }
+  
+  .map-placeholder {
+    background-color: #e0e0e0;
+    padding: 40px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
