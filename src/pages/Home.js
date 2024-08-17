@@ -1,15 +1,24 @@
 import React from 'react';
-import Mindfulness from './Mindfulness';
-import SustainableLiving from './SustainableLiving';
-import VirtualTourism from './VirtualTourism';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import '../styles/Home.css';
+import LanguageSelector from '../components/LanguageSelector'; // Import the LanguageSelector component
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
-    <div>
-      <h1>Welcome to the Himalayan Cultural Archive</h1>
-      <Mindfulness />
-      <SustainableLiving />
-      <VirtualTourism />
+    <div className="homepage">
+      <LanguageSelector /> {/* Add the LanguageSelector component */}
+      <div className="intro-section">
+        <h1>{t('welcome_message')}</h1>
+        <p>{t('intro_text')}</p>
+      </div>
+      <div className="start-button-section">
+        <Link to="/mindfulness">
+          <button className="start-button">{t('enter_button')}</button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.mindfulness-container {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #2C5364;
+  }
+  
+  .folk-tales, .youtube-playlist, .audiobook-section, .user-content {
+    margin-bottom: 30px;
+  }
+  
+  .video-container {
+    background-color: #f0f0f0;
+    height: 200px; /* This is a Placeholder size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+  }
+  
+  p {
+    color: #666;
+    font-style: italic;
+  }
+  

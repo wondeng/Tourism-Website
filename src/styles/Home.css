@@ -1,0 +1,121 @@
+/* src/styles/Home.css */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/84/56/b7/8456b73610ee845495bb29a1fb30b67d.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .homepage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* This is a Dark overlay for better text visibility */
+    z-index: -1;
+  }
+  
+  .intro-section h1 {
+    margin-bottom: 15px;
+    color: #d2bb36; /* This is a Gold color for the heading */
+    font-family: 'Merriweather', serif;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    animation: textFadeIn 1.5s ease-out forwards, textScaleUp 1.5s ease-out forwards;
+  }
+  
+  .intro-section p {
+    margin-bottom: 25px;
+    color: #ffffff; /* White color for the subtext */
+    font-family: 'Arial', sans-serif;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    animation: textFadeIn 1.5s ease-out forwards, textScaleUp 1.5s ease-out forwards;
+  }
+  
+  .start-button-section {
+    margin-top: 30px;
+  }
+  
+  .start-button {
+    padding: 12px 24px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #d72638; /* Vibrant red inspired by traditional Tibetan colors */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #a80000;
+    transform: translateY(-3px);
+  }
+  
+  /* Text fade-in and scale-up effect */
+  @keyframes textFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes textScaleUp {
+    0% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  
+}
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    .intro-section h1 {
+      font-size: 2rem;
+    }
+  
+    .intro-section p {
+      font-size: 1.1rem;
+    }
+  
+    .start-button {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .intro-section p {
+      font-size: 1rem;
+    }
+  
+    .start-button {
+      padding: 8px 16px;
+      font-size: 1rem;
+    }
+  }
+  
