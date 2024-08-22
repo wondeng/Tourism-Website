@@ -46,14 +46,14 @@ export default function Mindfulness() {
         
         
         <div className="youtube-playlist-grid">
-          <div className="video-item">
+          <div className="video-item1">
             <iframe src="https://www.youtube.com/embed/BR6yH4S1UMU" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
             </iframe>
           </div>
-          <div className="video-item">
+          <div className="video-item2">
             <iframe src="https://www.youtube.com/embed/yXX9_dX_gjo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
-          <div className="video-item">
+          <div className="video-item3">
             <iframe src="https://www.youtube.com/embed/HmEo6RI4Wvs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
